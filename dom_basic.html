@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yo</title>
+</head>
+<body>
+    <input onchange="PopulateDiv()" id="firstNumber" type="text" placeholder="firstNumber"><br><br>
+    <input onchange="PopulateDiv()" id="secondNumber" type="text" placeholder="secondNumber"><br>
+    <div id="finalSum"></div>
+
+    <script>
+        function PopulateDiv(){
+            const a = document.getElementById("firstNumber").value;
+            const b = document.getElementById("secondNumber").value;
+            const element = document.getElementById("finalSum");
+            element.innerHTML = parseInt(a) + parseInt(b);
+        }
+    </script>
+</body>
+</html>
